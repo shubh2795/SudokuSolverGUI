@@ -1,117 +1,101 @@
 package GUI;
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
 import javax.swing.*;
+import javax.swing.filechooser.FileSystemView;
 
-public class SudokuGui {
-    private static JTextField[][] fields;
-    private static JTextArea area;
-    private static JTabbedPane tab;
-    private static JFrame frame;
+public class SudokuGui extends JFrame {
+    private static final String INITIAL_BOARD = "";
+    private SudokuModel        _sudokuLogic = new SudokuModel(INITIAL_BOARD);
+    private SudokuBoardDisplay _sudokuBoard = new SudokuBoardDisplay(_sudokuLogic);
 
-    public static void main(String[] args){
-        try{
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        }catch(Exception e){
-            System.out.println("Cannot get look and feel.");
-        }
 
-        frame = new JFrame("Sudoku Solver");
-        JPanel root = new JPanel();
-        frame.add(root);
 
-        tab = new JTabbedPane();
-        root.add(tab);
-        tab.setFont(tab.getFont().deriveFont(40f));
+    public SudokuGui() {
 
-        JPanel panel1 = new JPanel();
-        tab.addTab("Grid", panel1);
-        panel1.setLayout(new FlowLayout(FlowLayout.LEFT));
-        JPanel grid = new JPanel();
-        panel1.add(grid);
-        grid.setLayout(new GridLayout(9, 9));
-        fields = new JTextField[9][9];
-        for(int i = 0; i < 9; i++){
-            for(int j = 0; j < 9; j++){
-                fields[i][j] = new JTextField(2);
-                fields[i][j].setFont(fields[i][j].getFont().deriveFont(60f));
-                fields[i][j].setHorizontalAlignment(JTextField.CENTER);
-                grid.add(fields[i][j]);
+        JRadioButton backTracking = new JRadioButton("BackTracking");
+        JRadioButton dfs = new JRadioButton("DFS");
+        JRadioButton stch = new JRadioButton("Stochastic Search Algorithm");
+        JRadioButton onePossibility = new JRadioButton("1-Possibility");
+
+        ButtonGroup radioGroup = new ButtonGroup();
+        radioGroup.add(backTracking);
+        radioGroup.add(dfs);
+        radioGroup.add(stch);
+        radioGroup.add(onePossibility);
+
+        JButton solveBtn = new JButton("Solve");
+        JButton loadBtn = new JButton("Load File" );
+
+        JPanel radioPanel = new JPanel();
+        JPanel buttonPanel = new JPanel();
+
+        radioPanel.setLayout(new FlowLayout());
+
+        radioPanel.add(stch);
+        radioPanel.add(backTracking);
+        radioPanel.add(onePossibility);
+        radioPanel.add(dfs);
+        pack();
+        buttonPanel.setLayout(new FlowLayout());
+        buttonPanel.add(loadBtn);
+        buttonPanel.add(solveBtn);
+
+
+        solveBtn.addActionListener(new SolveListener());
+        loadBtn.addActionListener(new LoadListener());
+
+        JPanel content = new JPanel();
+        content.setLayout(new BorderLayout());
+
+
+        content.add(radioPanel, BorderLayout.NORTH);
+        content.add(buttonPanel, BorderLayout.SOUTH);
+        content.add(_sudokuBoard, BorderLayout.CENTER);
+
+
+        setContentPane(content);
+        setTitle("Sudoku Solver by Shubham");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setResizable(false);
+        pack();
+        setLocationRelativeTo(null);
+    }
+
+
+
+    class SolveListener implements ActionListener {
+        public void actionPerformed(ActionEvent ae) {
+            try {
+
+
+            } catch (NumberFormatException nfe) {
+                JOptionPane.showMessageDialog(null, "Please enter numeric values.");
             }
         }
+    }
 
-        JPanel panel2 = new JPanel();
-        tab.addTab("Text", panel2);
-        area = new JTextArea(9, 30);
-        area.setFont(area.getFont().deriveFont(60f));
-        panel2.add(area);
+    class LoadListener implements ActionListener {
+        public void actionPerformed(ActionEvent ae) {
+            try {
 
-        JButton solveButton = new JButton("Solve!");
-        solveButton.setFont(solveButton.getFont().deriveFont(60f));
-        root.add(solveButton);
-        solveButton.addActionListener(new ActionListener(){
-            @Override
-            public void actionPerformed(ActionEvent e){
-                try{
-                    int[][] mat = new int[9][9];
-                    if(tab.getSelectedIndex() == 0){
-                        for(int i = 0; i < 9; i++){
-                            for(int j = 0; j < 9; j++){
-                                if(fields[i][j].getText().length() > 1)
-                                    throw new Exception();
-                                if(fields[i][j].getText().equals(".") || fields[i][j].getText().equals(" ") || fields[i][j].getText().equals(""))
-                                    mat[i][j] = 0;
-                                else
-                                    mat[i][j] = Integer.parseInt(fields[i][j].getText());
-                            }
-                        }
-                    }else{
-                        String[] linei = area.getText().split("\n");
-                        for(int i = 0; i < 9; i++){
-                            linei[i].trim();
-                            String[] linej = linei[i].split(" ");
-                            for(int j = 0; j < 9; j++){
-                                if(linej[j].equals(".") || linej[j].equals(""))
-                                    mat[i][j] = 0;
-                                else
-                                    mat[i][j] = Integer.parseInt(linej[j]);
-                            }
-                        }
-                    }
-                    SudokuSolve.solve(mat);
-                    StringBuilder b = new StringBuilder();
-                    for(int i = 0; i < 9; i++){
-                        for(int j = 0; j < 9; j++){
-                            fields[i][j].setText(SudokuSolve.getResult()[i][j] + "");
-                            b.append(SudokuSolve.getResult()[i][j] + " ");
-                        }
-                        b.append('\n');
-                    }
-                    area.setText(b.toString());
-                }catch(Exception ex){
-                    JOptionPane.showMessageDialog(null, "Input Sudoku not valid!", "Error", JOptionPane.ERROR_MESSAGE);
+                JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+                int returnValue = jfc.showOpenDialog(null);
+                if (returnValue == JFileChooser.APPROVE_OPTION) {
+                    File selectedFile = jfc.getSelectedFile();
+                    System.out.println(selectedFile.getAbsolutePath());
                 }
-            }
-        });
 
-        JButton clearButton = new JButton("Clear");
-        clearButton.setFont(clearButton.getFont().deriveFont(60f));
-        root.add(clearButton);
-        clearButton.addActionListener(new ActionListener(){
-            @Override
-            public void actionPerformed(ActionEvent e){
-                for(int i = 0; i < 9; i++){
-                    for(int j = 0; j < 9; j++){
-                        fields[i][j].setText("");
-                    }
-                }
-                area.setText("");
+            } catch (NumberFormatException nfe) {
+               System.out.println(nfe);
             }
-        });
+        }
+    }
 
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(1500, 1000);
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
+    public static void main(String[] args) {
+        new SudokuGui().setVisible(true);
     }
 }
