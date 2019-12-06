@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc1910d3-f13b-4b42-910a-68276ae29947" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGui.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -26,12 +25,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-630">
-              <caret line="21" column="72" lean-forward="true" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+            <state relative-caret-position="1071">
+              <caret line="105" column="71" lean-forward="true" selection-start-line="105" selection-start-column="71" selection-end-line="105" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3325#3326#0" expanded="true" />
-                <element signature="e#3370#3371#0" expanded="true" />
+                <element signature="e#3574#3575#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -169,7 +167,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575598591169" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575601492718" />
     <property name="jdk.selected.JAVA_MODULE" value="12" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -283,16 +281,15 @@
       <updated>1574437512243</updated>
       <workItem from="1574437520419" duration="4884000" />
       <workItem from="1574716079434" duration="2082000" />
-      <workItem from="1575572264635" duration="12096000" />
+      <workItem from="1575572264635" duration="13714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19062000" />
+    <option name="totallyTimeSpent" value="20680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25037822" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -544,12 +541,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630">
-          <caret line="21" column="72" lean-forward="true" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+        <state relative-caret-position="1071">
+          <caret line="105" column="71" lean-forward="true" selection-start-line="105" selection-start-column="71" selection-end-line="105" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3325#3326#0" expanded="true" />
-            <element signature="e#3370#3371#0" expanded="true" />
+            <element signature="e#3574#3575#0" expanded="true" />
           </folding>
         </state>
       </provider>

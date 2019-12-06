@@ -11,15 +11,15 @@ public class SudokuGui extends JFrame {
     private static final String INITIAL_BOARD = "";
     private SudokuModel        _sudokuLogic = new SudokuModel(INITIAL_BOARD);
     private SudokuBoardDisplay _sudokuBoard = new SudokuBoardDisplay(_sudokuLogic);
-
+    JRadioButton backTracking = new JRadioButton("BackTracking");
+    JRadioButton dfs = new JRadioButton("DFS");
+    JRadioButton stch = new JRadioButton("Stochastic Search Algorithm");
+    JRadioButton onePossibility = new JRadioButton("1-Possibility");
 
 
     public SudokuGui() {
 
-        JRadioButton backTracking = new JRadioButton("BackTracking");
-        JRadioButton dfs = new JRadioButton("DFS");
-        JRadioButton stch = new JRadioButton("Stochastic Search Algorithm");
-        JRadioButton onePossibility = new JRadioButton("1-Possibility");
+
 
         ButtonGroup radioGroup = new ButtonGroup();
         radioGroup.add(backTracking);
@@ -47,6 +47,7 @@ public class SudokuGui extends JFrame {
 
         solveBtn.addActionListener(new SolveListener());
         loadBtn.addActionListener(new LoadListener());
+        backTracking.addActionListener(new BackTrackListener());
 
         JPanel content = new JPanel();
         content.setLayout(new BorderLayout());
@@ -68,7 +69,7 @@ public class SudokuGui extends JFrame {
 
 
     class SolveListener implements ActionListener {
-        public void actionPerformed(ActionEvent ae) {
+        public void actionPerformed(ActionEvent event) {
             try {
 
 
@@ -78,8 +79,24 @@ public class SudokuGui extends JFrame {
         }
     }
 
+    class BackTrackListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            try {
+                boolean isBackTrackingSelected = backTracking.isSelected();
+                if (isBackTrackingSelected) {
+
+                    // create object of backtracking algo here
+
+                }
+
+            } catch (NumberFormatException nfe) {
+
+            }
+        }
+    }
+
     class LoadListener implements ActionListener {
-        public void actionPerformed(ActionEvent ae) {
+        public void actionPerformed(ActionEvent event) {
             try {
 
                 JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
