@@ -5,10 +5,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.filechooser.FileSystemView;
 
 public class SudokuGui extends JFrame {
-    private static final String INITIAL_BOARD = "";
+    private static final String INITIAL_BOARD = "123456987";
     private SudokuModel        _sudokuLogic = new SudokuModel(INITIAL_BOARD);
     private SudokuBoardDisplay _sudokuBoard = new SudokuBoardDisplay(_sudokuLogic);
     JRadioButton backTracking = new JRadioButton("BackTracking");
@@ -18,8 +19,6 @@ public class SudokuGui extends JFrame {
 
 
     public SudokuGui() {
-
-
 
         ButtonGroup radioGroup = new ButtonGroup();
         radioGroup.add(backTracking);
@@ -98,11 +97,12 @@ public class SudokuGui extends JFrame {
     class LoadListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
             try {
-
-                JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
-                int returnValue = jfc.showOpenDialog(null);
+                JFileChooser fileChooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+                FileNameExtensionFilter filter = new FileNameExtensionFilter("TEXT FILES", "txt", "text");
+                fileChooser.setFileFilter(filter);
+                int returnValue = fileChooser.showOpenDialog(null);
                 if (returnValue == JFileChooser.APPROVE_OPTION) {
-                    File selectedFile = jfc.getSelectedFile();
+                    File selectedFile = fileChooser.getSelectedFile();
                     System.out.println(selectedFile.getAbsolutePath());
                 }
 

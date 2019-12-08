@@ -9,7 +9,7 @@ import javax.swing.JComponent;
 
 public class SudokuBoardDisplay  extends JComponent {
 
-    private static final int CELL_PIXELS = 50;
+    private static final int CELL_PIXELS = 60;
     private static final int PUZZLE_SIZE = 9;
     private static final int SUBSQUARE   = 3;
     private static final int BOARD_PIXELS = CELL_PIXELS * PUZZLE_SIZE;

@@ -43,10 +43,6 @@ public class SudokuModel {
     }
 
 
-    public boolean isLegalMove(int row, int col, int val) {
-        return row>=0 && row<BOARD_SIZE && col>=0 && col<BOARD_SIZE
-                && val>0 && val<=9 && _board[row][col]==0;
-    }
 
 
     public void setVal(int r, int c, int v) {

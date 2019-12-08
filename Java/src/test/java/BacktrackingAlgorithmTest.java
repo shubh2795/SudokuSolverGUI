@@ -1,3 +1,7 @@
+import algorithms.BacktrackingAlgorithm;
+import algorithms.SudokuSolver;
+import common.SudokuLoader;
+import common.SudokuValidator;
 import org.junit.Test;
 
 public class BacktrackingAlgorithmTest {
