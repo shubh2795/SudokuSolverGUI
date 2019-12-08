@@ -1,51 +1,32 @@
 package GUI;
 
+
+
 public class SudokuModel {
 
-    private static final int BOARD_SIZE = 9;
-    private int[][] _board;
-    public SudokuModel() {
-        _board = new int[BOARD_SIZE][BOARD_SIZE];
+    int BOARD_SIZE ;
+    char[][] _board;
+
+   public SudokuModel(char [] [] initialBoard) {
+       this._board = initialBoard;
+       BOARD_SIZE = _board.length;
+        initializeFromString(_board);
+
     }
 
 
-    public SudokuModel(String initialBoard) {
-        this();
-        initializeFromString(initialBoard);
-    }
+    public void initializeFromString( char [] [] boardStr) {
 
-
-    public void initializeFromString(final String boardStr) {
-        clear();
-        int row = 0;
-        int col = 0;
-
-        for (int i = 0; i < boardStr.length(); i++) {
-            char c = boardStr.charAt(i);
-            if (c >= '1' && c <='9') {
-                if (row > BOARD_SIZE || col > BOARD_SIZE) {
-                    throw new IllegalArgumentException("SudokuModel: "
-                            + " Attempt to initialize outside 1-9 "
-                            + " at row " + (row+1) + " and col " + (col+1));
-                }
-                _board[row][col] = c - '0';
-                col++;
-            } else if (c == '.') {
-                col++;
-            } else if (c == '/') {
-                row++;
-                col = 0;
-            } else {
-                throw new IllegalArgumentException("SudokuModel: Character '" + c
-                        + "' not allowed in board specification");
+        for (int row = 0; row < BOARD_SIZE; row++) {
+            for (int col = 0; col < BOARD_SIZE; col++) {
+                setVal(row, col, boardStr[row][col]);
             }
         }
+
     }
 
 
-
-
-    public void setVal(int r, int c, int v) {
+    public void setVal(int r, int c, char v) {
         _board[r][c] = v;
     }
 
@@ -55,11 +36,4 @@ public class SudokuModel {
     }
 
 
-    public void clear() {
-        for (int row = 0; row < BOARD_SIZE; row++) {
-            for (int col = 0; col < BOARD_SIZE; col++) {
-                setVal(row, col, 0);
-            }
-        }
     }
-}

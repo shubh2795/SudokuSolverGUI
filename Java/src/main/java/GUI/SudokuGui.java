@@ -1,17 +1,34 @@
 package GUI;
+import GUI.ActionListeners.HelpListener;
+import GUI.ActionListeners.LoadListener;
+import GUI.ActionListeners.SolveListener;
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import javax.swing.*;
-import javax.swing.filechooser.FileNameExtensionFilter;
-import javax.swing.filechooser.FileSystemView;
 
 public class SudokuGui extends JFrame {
-    private static final String INITIAL_BOARD = "123456987";
-    private SudokuModel        _sudokuLogic = new SudokuModel(INITIAL_BOARD);
-    private SudokuBoardDisplay _sudokuBoard = new SudokuBoardDisplay(_sudokuLogic);
+
+    char[][] INITIAL_BOARD = new char[][]
+            {
+                    {'3', '-', '6', '5', '-', '8', '4', '-','-'},
+                    {'5', '2', '-', '-','-', '-', '-', '-', '-'},
+                    {'-','8', '7', '-', '-', '-', '-', '3', '1'},
+                    {'-', '-', '3', '-', '1', '-', '-', '8', '-'},
+                    {'9', '-', '-', '8', '6', '3', '-', '-', '5'},
+                    {'-', '5','-', '-', '9', '-', '6', '-', '-'},
+                    {'1', '3', '-', '-', '-', '-', '2', '5', '-'},
+                    {'-', '-', '-', '-', '-', '-', '-', '7', '4'},
+                    {'-', '-', '5', '2', '-', '6', '3', '-', '-'}
+            };
+
+    char[] domain = {'1','2','3','4','5','6','7','8','9'};
+
+
+    private SudokuModel   _sudokuLogic = new SudokuModel(INITIAL_BOARD);
+    private SudokuBoardDisplay _sudokuBoard = new SudokuBoardDisplay(_sudokuLogic,INITIAL_BOARD);
+
     JRadioButton backTracking = new JRadioButton("BackTracking");
     JRadioButton dfs = new JRadioButton("DFS");
     JRadioButton stch = new JRadioButton("Stochastic Search Algorithm");
@@ -28,6 +45,7 @@ public class SudokuGui extends JFrame {
 
         JButton solveBtn = new JButton("Solve");
         JButton loadBtn = new JButton("Load File" );
+        JButton helpBtn = new JButton("Help ?" );
 
         JPanel radioPanel = new JPanel();
         JPanel buttonPanel = new JPanel();
@@ -42,10 +60,13 @@ public class SudokuGui extends JFrame {
         buttonPanel.setLayout(new FlowLayout());
         buttonPanel.add(loadBtn);
         buttonPanel.add(solveBtn);
+        buttonPanel.add(helpBtn);
 
 
         solveBtn.addActionListener(new SolveListener());
         loadBtn.addActionListener(new LoadListener());
+        helpBtn.addActionListener(new HelpListener());
+
         backTracking.addActionListener(new BackTrackListener());
 
         JPanel content = new JPanel();
@@ -67,16 +88,7 @@ public class SudokuGui extends JFrame {
 
 
 
-    class SolveListener implements ActionListener {
-        public void actionPerformed(ActionEvent event) {
-            try {
 
-
-            } catch (NumberFormatException nfe) {
-                JOptionPane.showMessageDialog(null, "Please enter numeric values.");
-            }
-        }
-    }
 
     class BackTrackListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
@@ -94,23 +106,7 @@ public class SudokuGui extends JFrame {
         }
     }
 
-    class LoadListener implements ActionListener {
-        public void actionPerformed(ActionEvent event) {
-            try {
-                JFileChooser fileChooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
-                FileNameExtensionFilter filter = new FileNameExtensionFilter("TEXT FILES", "txt", "text");
-                fileChooser.setFileFilter(filter);
-                int returnValue = fileChooser.showOpenDialog(null);
-                if (returnValue == JFileChooser.APPROVE_OPTION) {
-                    File selectedFile = fileChooser.getSelectedFile();
-                    System.out.println(selectedFile.getAbsolutePath());
-                }
 
-            } catch (NumberFormatException nfe) {
-               System.out.println(nfe);
-            }
-        }
-    }
 
     public static void main(String[] args) {
         new SudokuGui().setVisible(true);

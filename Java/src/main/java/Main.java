@@ -26,7 +26,7 @@ public class Main {
 
         if (algorithmType == 1) {
             SudokuSolver solver = new BacktrackingAlgorithm();
-            if (sudokuLoader.loadSudokuFromTextFile(fileName, sudokuToText)) {
+            if (sudokuLoader.loadSudokuFromTextFile(fileName)) {
                 System.out.println("Sudoku puzzle has been loaded.");
                 char[] domain = sudokuLoader.getDomain();
                 char[][] board = sudokuLoader.getSudokuBoard();
@@ -34,7 +34,7 @@ public class Main {
             }
         } else if (algorithmType == 2) {
             SudokuSolver solver = new OnlyOnePossibility();
-            if (sudokuLoader.loadSudokuFromTextFile(fileName, sudokuToText)) {
+            if (sudokuLoader.loadSudokuFromTextFile(fileName)) {
                 System.out.println("Sudoku puzzle has been loaded.");
                 char[] domain = sudokuLoader.getDomain();
                 char[][] board = sudokuLoader.getSudokuBoard();
@@ -42,7 +42,7 @@ public class Main {
             }
         } else if (algorithmType == 3) {
             SudokuSolver solver = new DFS();
-            if (sudokuLoader.loadSudokuFromTextFile(fileName, sudokuToText)) {
+            if (sudokuLoader.loadSudokuFromTextFile(fileName)) {
                 System.out.println("Sudoku puzzle has been loaded.");
                 char[] domain = sudokuLoader.getDomain();
                 char[][] board = sudokuLoader.getSudokuBoard();
@@ -50,7 +50,7 @@ public class Main {
             }
         } else if (algorithmType == 4) {
             SudokuSolver solver = new StochasticSearchAlgorithm();
-            if (sudokuLoader.loadSudokuFromTextFile(fileName, sudokuToText)) {
+            if (sudokuLoader.loadSudokuFromTextFile(fileName)) {
                 System.out.println("Sudoku puzzle has been loaded.");
                 char[] domain = sudokuLoader.getDomain();
                 char[][] board = sudokuLoader.getSudokuBoard();
