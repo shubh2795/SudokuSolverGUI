@@ -1,7 +1,14 @@
 package GUI;
 import GUI.ActionListeners.HelpListener;
-import GUI.ActionListeners.SolveListener;
+
+import algorithms.BacktrackingAlgorithm;
+import algorithms.OnlyOnePossibility;
+import algorithms.StochasticSearchAlgorithm;
+import algorithms.SudokuSolver;
 import common.SudokuLoader;
+import common.SudokuToText;
+import common.SudokuValidator;
+
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -13,7 +20,7 @@ import javax.swing.filechooser.FileSystemView;
 public class SudokuGUI extends JFrame {
 
     private static  String INITIAL_BOARD =
-            "8156----4/" +
+                    "8156----4/" +
                     "6---75-8-/" +
                     "----9----/" +
                     "9---417---/" +
@@ -24,32 +31,34 @@ public class SudokuGUI extends JFrame {
                     "1----7895";
 
 
-    private SudokuModel        _sudokuLogic = new SudokuModel(INITIAL_BOARD);
-    private SudokuBoardDisplay _sudokuBoard = new SudokuBoardDisplay(_sudokuLogic);
+    private SudokuModel sudokuLogic = new SudokuModel(INITIAL_BOARD);
+    private SudokuBoardDisplay boardDisplay = new SudokuBoardDisplay(sudokuLogic);
 
-    private JTextField _rowTF = new JTextField(2);
-    private JTextField _colTF = new JTextField(2);
-    private JTextField _valTF = new JTextField(2);
+    private JTextField rowTextField = new JTextField(2);
+    private JTextField colTextField = new JTextField(2);
+    private JTextField valTextField = new JTextField(2);
+
     JRadioButton backTracking = new JRadioButton("BackTracking");
-    JRadioButton dfs = new JRadioButton("DFS");
     JRadioButton stch = new JRadioButton("Stochastic Search Algorithm");
     JRadioButton onePossibility = new JRadioButton("1-Possibility");
-
+    JButton generatePuzzleBtn = new JButton("New Puzzle");
+    JButton solveBtn = new JButton("Solve");
+    JButton helpBtn = new JButton("Help ?" );
+    JButton setValue = new JButton("Set Value");
+    JButton loadBtn = new JButton("Load File" );
+    boolean isFileSelected=false;
 
     public SudokuGUI() {
-        JButton solveBtn = new JButton("Solve");
-        JButton helpBtn = new JButton("Help ?" );
 
-        JButton setValue = new JButton("Set Value");
-        JButton loadBtn = new JButton("Load File" );
+
         JPanel controlPanel = new JPanel();
         controlPanel.setLayout(new FlowLayout());
         controlPanel.add(new JLabel("Row (1-N):"));
-        controlPanel.add(_rowTF);
+        controlPanel.add(rowTextField);
         controlPanel.add(new JLabel("Col (1-N):"));
-        controlPanel.add(_colTF);
+        controlPanel.add(colTextField);
         controlPanel.add(new JLabel("Val:"));
-        controlPanel.add(_valTF);
+        controlPanel.add(valTextField);
         controlPanel.add(setValue);
         controlPanel.add(loadBtn);
         controlPanel.add(solveBtn);
@@ -57,23 +66,20 @@ public class SudokuGUI extends JFrame {
 
         ButtonGroup radioGroup = new ButtonGroup();
         radioGroup.add(backTracking);
-        radioGroup.add(dfs);
         radioGroup.add(stch);
         radioGroup.add(onePossibility);
 
         JPanel radioPanel = new JPanel();
-
-
         radioPanel.setLayout(new FlowLayout());
 
         radioPanel.add(stch);
         radioPanel.add(backTracking);
         radioPanel.add(onePossibility);
-        radioPanel.add(dfs);
+        radioPanel.add(generatePuzzleBtn);
+
         pack();
 
-
-        setValue.addActionListener(new MoveListener());
+        setValue.addActionListener(new SetValueListener());
         loadBtn.addActionListener(new LoadListener());
         solveBtn.addActionListener(new SolveListener());
         helpBtn.addActionListener(new HelpListener());
@@ -82,11 +88,11 @@ public class SudokuGUI extends JFrame {
 
 
         content.add(controlPanel, BorderLayout.NORTH);
-        content.add(_sudokuBoard, BorderLayout.CENTER);
+        content.add(boardDisplay, BorderLayout.CENTER);
 
         content.add(radioPanel, BorderLayout.AFTER_LAST_LINE);
         setContentPane(content);
-        setTitle("Sudoku Game and Solver by Shubham");
+        setTitle("Sudoku Game by Shubham");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
         pack();
@@ -95,16 +101,16 @@ public class SudokuGUI extends JFrame {
 
 
 
-    class MoveListener implements ActionListener {
+    class SetValueListener implements ActionListener {
         public void actionPerformed(ActionEvent ae) {
             try {
 
-                int row = Integer.parseInt(_rowTF.getText().trim()) - 1;
-                int col = Integer.parseInt(_colTF.getText().trim()) - 1;
-                int val = Integer.parseInt(_valTF.getText().trim());
-                if (_sudokuLogic.isLegalMove(row, col, val)) {
-                    _sudokuLogic.setVal(row, col, val);
-                    _sudokuBoard.repaint();
+                int row = Integer.parseInt(rowTextField.getText().trim()) - 1;
+                int col = Integer.parseInt(colTextField.getText().trim()) - 1;
+                int val = Integer.parseInt(valTextField.getText().trim());
+                if (sudokuLogic.isLegalMove(row, col, val)) {
+                    sudokuLogic.setVal(row, col, val);
+                    boardDisplay.repaint();
                 } else {
                     JOptionPane.showMessageDialog(null, "Illegal row, col, or value.");
                 }
@@ -116,6 +122,7 @@ public class SudokuGUI extends JFrame {
     }
 
     public class LoadListener implements ActionListener {
+
         public void actionPerformed(ActionEvent event) {
 
             try {
@@ -129,17 +136,10 @@ public class SudokuGUI extends JFrame {
                     SudokuLoader sudokuLoader = new SudokuLoader();
 
                     if (sudokuLoader.loadSudokuFromTextFile(selectedFilePath)) {
+                        isFileSelected = true;
                         System.out.println("Sudoku puzzle has been loaded.");
                         char[][] board = sudokuLoader.getSudokuBoard();
-                        int val =0;
-                        for(int i=0;i<board.length;i++){
-                            for(int j=0;j<board.length;j++){
-                                val= Integer.parseInt(Character.toString(board[i][j]));
-                                _sudokuLogic.setVal(i, j, val);
-                                _sudokuBoard.repaint();
-                            }
-
-                        }
+                        updateSolvedSudoku(board);
 
                     }
                 }
@@ -149,6 +149,61 @@ public class SudokuGUI extends JFrame {
             }
         }
     }
+
+    public  void updateSolvedSudoku(char[][] board){
+        int val =0;
+        for(int i=0;i<board.length;i++){
+            for(int j=0;j<board.length;j++){
+                if((board[i][j])=='-'){
+                    val= 0;
+                }
+                else{
+                    val= Integer.parseInt(Character.toString(board[i][j]));
+                }
+                sudokuLogic.setVal(i, j, val);
+                boardDisplay.repaint();
+                
+            }
+
+        }
+    }
+
+    public class SolveListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            if(isFileSelected = true){
+                SudokuLoader sudokuLoader = new SudokuLoader();
+                char board [][]= sudokuLoader.getSudokuBoard();
+                char solvedBoard [][];
+                char[] domain = sudokuLoader.getDomain();
+                boolean isBackTrackingSelected= backTracking.isSelected();
+                boolean isStochasticSearchSelected = stch.isSelected();
+                boolean isOnlyOnePossibilitySelected = onePossibility.isSelected();
+                SudokuToText sudokuToText = new SudokuToText();
+                SudokuValidator sudokuValidator = new SudokuValidator();
+
+                if(isBackTrackingSelected){
+                    SudokuSolver solver = new BacktrackingAlgorithm();
+                    solver.executeAlgorithm(board, domain, sudokuValidator, sudokuToText);
+                    updateSolvedSudoku(board);
+
+                }
+                if(isStochasticSearchSelected){
+                    SudokuSolver solver = new StochasticSearchAlgorithm();
+                    solver.executeAlgorithm(board, domain, sudokuValidator, sudokuToText);
+                    updateSolvedSudoku(board);
+                }
+                if(isOnlyOnePossibilitySelected ){
+                    SudokuSolver solver = new OnlyOnePossibility();
+                    solver.executeAlgorithm(board, domain, sudokuValidator, sudokuToText);
+                    updateSolvedSudoku(board);
+                }
+
+
+            }
+
+        }
+    }
+
 
     public static void main(String[] args) {
         new SudokuGUI().setVisible(true);

@@ -58,10 +58,8 @@ public class SudokuLoader {
 
             scan.close();
         } catch (FileNotFoundException e) {
-            System.out.println(
-                    "File Not Found. Please input the sudoku in a file like Puzzle-4x4-0001.txt in the samplepuzzle folder. ");
+            System.out.println("File Not Found. Please input the sudoku in a file like Puzzle-4x4-0001.txt in the samplepuzzle folder. ");
             System.out.println("Exiting...");
-
         }
 
         return true;
@@ -76,6 +74,8 @@ public class SudokuLoader {
 
         return domain;
     }
+
+
 
 
 }

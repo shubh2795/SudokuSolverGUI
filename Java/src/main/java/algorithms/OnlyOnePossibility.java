@@ -80,4 +80,5 @@ public class OnlyOnePossibility extends SudokuSolver {
         return true;
     }
 
+
 }

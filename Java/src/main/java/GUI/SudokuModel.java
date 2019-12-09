@@ -17,7 +17,7 @@ public class SudokuModel {
         initializeFromString(initialBoard);
     }
 
-    public void initializeFromString(final String boardStr) {
+    public void initializeFromString( String boardStr) {
         clear();
         int row = 0;
         int col = 0;
