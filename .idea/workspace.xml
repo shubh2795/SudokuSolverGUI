@@ -3,18 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="dc1910d3-f13b-4b42-910a-68276ae29947" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/ActionListeners/LoadListener.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuBoardDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuBoardDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuGui$BackTrackListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuGui$BackTrackListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuGui$LoadListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuGui$SolveListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuGui$BackTrackListener.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuGui.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/common/SudokuLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java/out/production/classes/common/SudokuLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/LoadListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/LoadListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuBoardDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuBoardDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/src/main/java/common/SudokuLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/common/SudokuLoader.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -35,12 +32,14 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGui.java">
+        <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="-510">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3330#3331#0" expanded="true" />
+                <element signature="e#3375#3376#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuBoardDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+            <state relative-caret-position="-797">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,13 +60,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="578">
+              <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
               <folding>
-                <element signature="e#1360#1361#0" expanded="true" />
-                <element signature="e#1392#1393#0" expanded="true" />
-                <element signature="e#1436#1437#0" expanded="true" />
-                <element signature="e#1475#1476#0" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#442#443#0" expanded="true" />
+                <element signature="e#2230#2231#0" expanded="true" />
+                <element signature="e#2262#2263#0" expanded="true" />
+                <element signature="e#2386#2387#0" expanded="true" />
+                <element signature="e#2425#2426#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,9 +111,10 @@
         <option value="$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/HelpListener.java" />
         <option value="$PROJECT_DIR$/Java/src/main/java/common/SudokuLoader.java" />
         <option value="$PROJECT_DIR$/Java/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/LoadListener.java" />
         <option value="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGui.java" />
+        <option value="$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/LoadListener.java" />
         <option value="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuModel.java" />
+        <option value="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGUI.java" />
         <option value="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuBoardDisplay.java" />
       </list>
     </option>
@@ -139,61 +141,37 @@
             <path>
               <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
               <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
               <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
               <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
               <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
               <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="GUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -205,10 +183,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575821320922" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575907275635" />
     <property name="jdk.selected.JAVA_MODULE" value="12" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -225,7 +204,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SudokuGui">
+  <component name="RunManager" selected="Application.SudokuGUI">
+    <configuration name="SudokuGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.SudokuGUI" />
+      <module name="HW5.Java.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SudokuGui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GUI.SudokuGui" />
       <module name="HW5.Java.main" />
@@ -311,6 +303,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SudokuGUI" />
         <item itemvalue="Application.SudokuGui" />
         <item itemvalue="JUnit.All in HW5.Java.test" />
       </list>
@@ -332,18 +325,19 @@
       <workItem from="1575641057309" duration="9591000" />
       <workItem from="1575769030589" duration="697000" />
       <workItem from="1575774398515" duration="3432000" />
-      <workItem from="1575780072200" duration="9806000" />
+      <workItem from="1575780072200" duration="26404000" />
+      <workItem from="1575849550636" duration="8664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44206000" />
+    <option name="totallyTimeSpent" value="69468000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26928896" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -352,8 +346,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -377,7 +371,7 @@
       <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26928896" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -387,7 +381,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -508,33 +502,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/BackTrackingListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/HelpListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/BackTrackingListener.java" />
     <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/SolveListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -555,55 +523,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/LoadListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="51" lean-forward="true" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/test/java/BacktrackingAlgorithmTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="20" selection-end-column="58" />
+        <state relative-caret-position="-69">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGui.java">
+    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/HelpListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        <state relative-caret-position="136">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/OneDrive/Desktop/abc/SudokuGui.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/SudokuGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <folding>
+            <element signature="e#0#6121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/LoadListener.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuBoardDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        <state relative-caret-position="-797">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3330#3331#0" expanded="true" />
+            <element signature="e#3375#3376#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="578">
+          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
           <folding>
-            <element signature="e#1360#1361#0" expanded="true" />
-            <element signature="e#1392#1393#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-            <element signature="e#1475#1476#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#2230#2231#0" expanded="true" />
+            <element signature="e#2262#2263#0" expanded="true" />
+            <element signature="e#2386#2387#0" expanded="true" />
+            <element signature="e#2425#2426#0" expanded="true" />
           </folding>
         </state>
       </provider>
