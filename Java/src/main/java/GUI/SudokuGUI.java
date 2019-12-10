@@ -45,6 +45,7 @@ public class SudokuGUI extends JFrame {
     JButton helpBtn = new JButton("Help ?" );
     JButton setValue = new JButton("Set Value");
     JButton loadBtn = new JButton("Load File" );
+    JButton resetBtn = new JButton("Reset" );
     boolean isFileSelected=false;
 
     public SudokuGUI() {
@@ -74,12 +75,14 @@ public class SudokuGUI extends JFrame {
         radioPanel.add(stch);
         radioPanel.add(backTracking);
         radioPanel.add(onePossibility);
+        radioPanel.add(resetBtn);
 
 
         pack();
 
         setValue.addActionListener(new SetValueListener());
         loadBtn.addActionListener(new LoadListener());
+        resetBtn.addActionListener(new ResetListener());
         solveBtn.addActionListener(new SolveListener());
         helpBtn.addActionListener(new HelpListener());
         JPanel content = new JPanel();
@@ -112,6 +115,26 @@ public class SudokuGUI extends JFrame {
                     boardDisplay.repaint();
                 } else {
                     JOptionPane.showMessageDialog(null, "Illegal row, col, or value.");
+                }
+
+            } catch (NumberFormatException nfe) {
+                JOptionPane.showMessageDialog(null, "Please enter numeric values.");
+            }
+        }
+    }
+
+    class ResetListener implements ActionListener {
+        public void actionPerformed(ActionEvent ae) {
+            try {
+            int length = 9;
+                for(int i=0;i<length;i++){
+                    for(int j=0;j<length;j++){
+
+                        sudokuLogic.setVal(i, j, 0);
+                        boardDisplay.repaint();
+
+                    }
+
                 }
 
             } catch (NumberFormatException nfe) {

@@ -35,14 +35,14 @@ public class BacktrackingAlgorithmTest {
         SudokuLoader sudokuLoader= new SudokuLoader();
         SudokuValidator sudokuValidator= new SudokuValidator();
         SudokuToText sudokuToText= new SudokuToText();
-        if(sudokuLoader.loadSudokuFromTextFile("Puzzle-4x4-0101")){
+        if(sudokuLoader.loadSudokuFromTextFile("C:\\Users\\shubh\\OneDrive\\Desktop\\Puzzle-9x9-0001.txt")){
             System.out.println("Sudoku puzzle has been loaded.");
             char [] domain= sudokuLoader.getDomain();
             char [][] board=  sudokuLoader.getSudokuBoard();
             solver.executeAlgorithm(board,domain,sudokuValidator,sudokuToText);
         }
 
-    char [][] solvedBoard = new char[][]
+        char [][] solvedBoard = new char[][]
             {
                     {'3', '1', '6', '5', '7', '8', '4', '9','2'},
                     {'5', '2', '9', '1','3', '4', '7', '6', '8'},

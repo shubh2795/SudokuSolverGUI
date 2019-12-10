@@ -36,7 +36,7 @@ public class OnlyOnePossibilityTest {
         SudokuLoader sudokuLoader= new SudokuLoader();
         SudokuValidator sudokuValidator= new SudokuValidator();
         SudokuToText sudokuToText= new SudokuToText();
-        if(sudokuLoader.loadSudokuFromTextFile("Puzzle-4x4-0101")){
+        if(sudokuLoader.loadSudokuFromTextFile("C:\\Users\\shubh\\OneDrive\\Desktop\\Puzzle-9x9-0001.txt")){
             System.out.println("Sudoku puzzle has been loaded.");
             int size=sudokuLoader.getBoardSize();
 
