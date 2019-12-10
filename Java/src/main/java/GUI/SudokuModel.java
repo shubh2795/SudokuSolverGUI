@@ -4,11 +4,11 @@ package GUI;
 
 public class SudokuModel {
 
-    private static final int BOARD_SIZE = 9;
+    private static  int boardSize=9;
     private int[][] _board;
 
     public SudokuModel() {
-        _board = new int[BOARD_SIZE][BOARD_SIZE];
+        _board = new int[boardSize][boardSize];
     }
 
 
@@ -25,7 +25,7 @@ public class SudokuModel {
         for (int i = 0; i < boardStr.length(); i++) {
             char c = boardStr.charAt(i);
             if (c >= '1' && c <='9') {
-                if (row > BOARD_SIZE || col > BOARD_SIZE) {
+                if (row > boardSize || col > boardSize) {
                     throw new IllegalArgumentException("SudokuModel: "
                             + " Attempt to initialize outside 1-9 "
                             + " at row " + (row+1) + " and col " + (col+1));
@@ -46,7 +46,7 @@ public class SudokuModel {
 
 
     public boolean isLegalMove(int row, int col, int val) {
-        return row>=0 && row<BOARD_SIZE && col>=0 && col<BOARD_SIZE
+        return row>=0 && row< boardSize && col>=0 && col< boardSize
                 && val>0 && val<=9 && _board[row][col]==0;
     }
 
@@ -62,8 +62,8 @@ public class SudokuModel {
 
 
     public void clear() {
-        for (int row = 0; row < BOARD_SIZE; row++) {
-            for (int col = 0; col < BOARD_SIZE; col++) {
+        for (int row = 0; row < boardSize; row++) {
+            for (int col = 0; col < boardSize; col++) {
                 setVal(row, col, 0);
             }
         }

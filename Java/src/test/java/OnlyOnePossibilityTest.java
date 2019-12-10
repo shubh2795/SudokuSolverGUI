@@ -1,3 +1,8 @@
+import algorithms.OnlyOnePossibility;
+import algorithms.SudokuSolver;
+import common.SudokuLoader;
+import common.SudokuToText;
+import common.SudokuValidator;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -20,21 +25,26 @@ public class OnlyOnePossibilityTest {
 
     @Test
     public void validateSudoku() {
-        SudokuValidator.checkPerfectSquare(board);
-        SudokuValidator.checkSudokuValues(board);
+        SudokuValidator sudokuValidator= new SudokuValidator();
+        sudokuValidator.checkPerfectSquare(board);
+        sudokuValidator.checkSudokuValues(board);
     }
 
     @Test
     public void solve() {
         SudokuSolver solver = new OnlyOnePossibility();
-        if(SudokuLoader.loadSudokuFromTextFile("Puzzle-4x4-0101")){
+        SudokuLoader sudokuLoader= new SudokuLoader();
+        SudokuValidator sudokuValidator= new SudokuValidator();
+        SudokuToText sudokuToText= new SudokuToText();
+        if(sudokuLoader.loadSudokuFromTextFile("Puzzle-4x4-0101")){
             System.out.println("Sudoku puzzle has been loaded.");
-            char [] domain= SudokuLoader.getDomain();
-            char [][] board=  SudokuLoader.getSudokuBoard();
-            solver.executeAlgorithm(board,domain);
+            int size=sudokuLoader.getBoardSize();
+
+            domain= sudokuLoader.getDomain();
+
+            board=  sudokuLoader.getSudokuBoard();
+            solver.executeAlgorithm(board,domain,sudokuValidator,sudokuToText);
 
         }
-
-
     }
 }

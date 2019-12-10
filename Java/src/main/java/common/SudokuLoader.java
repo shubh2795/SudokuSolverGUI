@@ -75,6 +75,9 @@ public class SudokuLoader {
         return domain;
     }
 
+    public int getBoardSize(){
+        return boardSize;
+    }
 
 
 

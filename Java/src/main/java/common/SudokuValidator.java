@@ -21,8 +21,8 @@ public class SudokuValidator {
     }
 
     public void checkPerfectSquare(char[][] board) {
-        double sq = Math.sqrt(board.length);
-        if ((sq - Math.floor(sq)) != 0) {
+        double sqrt = Math.sqrt(board.length);
+        if ((sqrt - Math.floor(sqrt)) != 0) {
             System.out.println("Not a valid puzzle: Input boards of perfect squares");
             System.out.println("Exiting...");
             System.exit(1);

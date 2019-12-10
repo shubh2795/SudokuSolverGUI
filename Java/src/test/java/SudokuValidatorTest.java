@@ -1,3 +1,4 @@
+import common.SudokuValidator;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -18,7 +19,8 @@ public class SudokuValidatorTest {
                         {'6', '9', '2', '3', '5', '1', '8', '7', '4'},
                         {'7', '4', '5', '2', '8', '6', '3', '1', '9'}
                 };
-        boolean b =  SudokuValidator.isChangeValid(board,0,0,'1');
+        SudokuValidator sudokuValidator= new SudokuValidator();
+        boolean b =  sudokuValidator.isChangeValid(board,0,0,'1');
         assertEquals(false,b);
     }
 

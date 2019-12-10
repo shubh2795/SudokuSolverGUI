@@ -1,5 +1,5 @@
 package GUI;
-import GUI.ActionListeners.HelpListener;
+
 
 import algorithms.BacktrackingAlgorithm;
 import algorithms.OnlyOnePossibility;
@@ -18,8 +18,8 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.filechooser.FileSystemView;
 
 public class SudokuGUI extends JFrame {
-
-    private static  String INITIAL_BOARD =
+    int size = 0;
+    private static  String initialBoard =
                     "8156----4/" +
                     "6---75-8-/" +
                     "----9----/" +
@@ -31,7 +31,7 @@ public class SudokuGUI extends JFrame {
                     "1----7895";
 
 
-    private SudokuModel sudokuLogic = new SudokuModel(INITIAL_BOARD);
+    private SudokuModel sudokuLogic = new SudokuModel(initialBoard);
     private SudokuBoardDisplay boardDisplay = new SudokuBoardDisplay(sudokuLogic);
 
     private JTextField rowTextField = new JTextField(2);
@@ -41,7 +41,6 @@ public class SudokuGUI extends JFrame {
     JRadioButton backTracking = new JRadioButton("BackTracking");
     JRadioButton stch = new JRadioButton("Stochastic Search Algorithm");
     JRadioButton onePossibility = new JRadioButton("1-Possibility");
-    JButton generatePuzzleBtn = new JButton("New Puzzle");
     JButton solveBtn = new JButton("Solve");
     JButton helpBtn = new JButton("Help ?" );
     JButton setValue = new JButton("Set Value");
@@ -75,7 +74,7 @@ public class SudokuGUI extends JFrame {
         radioPanel.add(stch);
         radioPanel.add(backTracking);
         radioPanel.add(onePossibility);
-        radioPanel.add(generatePuzzleBtn);
+
 
         pack();
 
@@ -121,6 +120,17 @@ public class SudokuGUI extends JFrame {
         }
     }
 
+
+
+    public class HelpListener implements ActionListener {
+        String helpMessage = "Example:"+"\n"+"\n"+"9 --> (Size of puzzle)"+"\n"+"\n"+"\" 1  2  3  4  5  6  7  8  9  --> (Possible values)"  +"\n"+"\n"+ " -  -  3  1  4  -  7  -  5 " +"\n" +" 4  5  -  2  8  -  -  3  6 "+"\n"+ " 5  -  8  4  -  9   1  -  7 " +"\n" +
+                " -  -  4  8  -  6  -  7  3" +"\n"+ " 8  1  -  9  4  -  -  3  - " +"\n"+ " -  -  -  7  6  2  -  -  5  "+"\n" +
+                " -   5   4   -  7  -  -  6  8  " +"\n"+ " 6  -  -  -  4  -  1  8  -  " + "\n"+ " 7  -   -  6  -   -  5  -  -"+"\n"+"\n"+ "Replace blank values with '-' and save a file like Puzzle.txt"+"\n"+"Only Txt files accepted";
+        public void actionPerformed(ActionEvent event){
+            JOptionPane.showMessageDialog(null, helpMessage, "Sudoku Solver Help.", 1);
+        }
+    }
+
     public class LoadListener implements ActionListener {
 
         public void actionPerformed(ActionEvent event) {
@@ -162,18 +172,19 @@ public class SudokuGUI extends JFrame {
                 }
                 sudokuLogic.setVal(i, j, val);
                 boardDisplay.repaint();
-                
+
             }
 
         }
     }
 
     public class SolveListener implements ActionListener {
+
         public void actionPerformed(ActionEvent event) {
+
             if(isFileSelected = true){
                 SudokuLoader sudokuLoader = new SudokuLoader();
                 char board [][]= sudokuLoader.getSudokuBoard();
-                char solvedBoard [][];
                 char[] domain = sudokuLoader.getDomain();
                 boolean isBackTrackingSelected= backTracking.isSelected();
                 boolean isStochasticSearchSelected = stch.isSelected();
@@ -200,8 +211,14 @@ public class SudokuGUI extends JFrame {
 
 
             }
+            else{
 
-        }
+                    JOptionPane.showMessageDialog(null, "Invalid Puzzle Entered. Please upload a new puzzle and select an algorithm");
+                }
+
+            }
+
+
     }
 
 
