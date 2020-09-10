@@ -1,773 +1,303 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc1910d3-f13b-4b42-910a-68276ae29947" name="Default Changelist" comment="">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Diagrams/Class Diagram1.jpg.vbak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Diagrams/Class Diagram1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Diagrams/GUI.SudokuBoardDisplay.SudokuBoardDisplay(SudokuModel).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Diagrams/GUI.SudokuGUI.SudokuGUI().jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Diagrams/GUI.SudokuModel.SudokuModel().jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Diagrams/GUI.SudokuModel.setVal(int, int, int).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Diagrams/State  Diagram1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Diagrams/SudokuSolver.executeAlgorithm(char[][], char[]).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuBoardDisplay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuGUI$HelpListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuGUI$LoadListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuGUI$ResetListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuGUI$SetValueListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuGUI$SolveListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuGui.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/GUI/SudokuModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/META-INF/HW5.Java.main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/algorithms/BacktrackingAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/algorithms/OnlyOnePossibility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/algorithms/StochasticSearchAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/algorithms/SudokuSolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/common/SudokuLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/common/SudokuToText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/classes/common/SudokuValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/test/classes/BacktrackingAlgorithmTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/test/classes/GUI/SudokuBoardDisplayTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/test/classes/OnlyOnePossibilityTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/test/classes/StochasticSearchAlgorithmTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/test/classes/SudokuLoaderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/test/classes/SudokuToTextTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/test/classes/SudokuValidatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuBoardDisplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/algorithms/BacktrackingAlgorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/algorithms/OnlyOnePossibility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/algorithms/StochasticSearchAlgorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/algorithms/SudokuSolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/common/SudokuLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/common/SudokuToText.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/common/SudokuValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/test/java/BacktrackingAlgorithmTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/test/java/GUI/SudokuBoardDisplayTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/test/java/OnlyOnePossibilityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/test/java/StochasticSearchAlgorithmTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/test/java/SudokuLoaderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/test/java/SudokuToTextTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/test/java/SudokuValidatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReportHW5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.gradle/" />
-    <ignored path="$PROJECT_DIR$/build/" />
-    <ignored path="$PROJECT_DIR$/Java/.gradle/" />
-    <ignored path="$PROJECT_DIR$/Java/build/" />
-    <ignored path="$PROJECT_DIR$/Java/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/HW5$SudokuLoaderTest_loadSudokuFromTextFile.ic" NAME="SudokuLoaderTest.loadSudokuFromTextFile Coverage Results" MODIFIED="1575946054596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/HW5$SudokuLoaderTest_getDomain.ic" NAME="SudokuLoaderTest.getDomain Coverage Results" MODIFIED="1575945215511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/HW5$SudokuBoardDisplayTest.ic" NAME="SudokuBoardDisplayTest Coverage Results" MODIFIED="1575946417589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>GUI.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/HW5$BacktrackingAlgorithmTest_solve.ic" NAME="BacktrackingAlgorithmTest.solve Coverage Results" MODIFIED="1575944974054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/HW5$OnlyOnePossibilityTest_solve.ic" NAME="OnlyOnePossibilityTest.solve Coverage Results" MODIFIED="1575936548753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/HW5$SudokuLoaderTest_getSudokuBoard.ic" NAME="SudokuLoaderTest.getSudokuBoard Coverage Results" MODIFIED="1575946019857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/HW5$All_in_HW5_Java_test.ic" NAME="All in HW5.Java.test Coverage Results" MODIFIED="1575945239205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/HW5$SudokuLoaderTest.ic" NAME="SudokuLoaderTest Coverage Results" MODIFIED="1575945312674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  <component name="ComposerSettings">
+    <execution />
   </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="181" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="241" column="13" lean-forward="true" selection-start-line="241" selection-start-column="13" selection-end-line="241" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
-        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>SolveListener</find>
-    </findStrings>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuFrame.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGrid.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuCellKeyListener.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/Algorithms/SudokuAlgorithms.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/Algorithms/BackTrackingAlgorithm.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/Algorithms/SudokuSolver.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/Algorithms/BacktrackingAlgorithm.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/Algorithms/DFS.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/Algorithms/StochasticSearchAlgorithm.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/algorithms/DFS.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/common/SudokuToText.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/BackTrackingListener.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/HelpListener.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGui.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/LoadListener.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuBoardDisplay.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/algorithms/BacktrackingAlgorithm.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/algorithms/OnlyOnePossibility.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/algorithms/StochasticSearchAlgorithm.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/algorithms/SudokuSolver.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuModel.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/common/SudokuValidator.java" />
-        <option value="$PROJECT_DIR$/Java/src/test/java/DFSTest.java" />
-        <option value="$PROJECT_DIR$/Java/src/test/java/SudokuValidatorTest.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/common/SudokuLoader.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/SetValueListener.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/SolveListener.java" />
-        <option value="$PROJECT_DIR$/Java/src/test/java/BacktrackingAlgorithmTest.java" />
-        <option value="$PROJECT_DIR$/Java/src/test/java/OnlyOnePossibilityTest.java" />
-        <option value="$PROJECT_DIR$/Java/src/test/java/StochasticSearchAlgorithmTest.java" />
-        <option value="$PROJECT_DIR$/Java/src/test/java/SudokuLoaderTest.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGUI.java" />
-        <option value="$PROJECT_DIR$/Java/src/test/java/GUI/SudokuBoardDisplayTest.java" />
-      </list>
-    </option>
+  <component name="JupyterTrust" id="528595aa-cad0-47e1-a911-63231eceaec8" />
+  <component name="ProjectId" id="1hIyoeWZIe9zBqrLhi2UajKRX1r" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="14" />
-    <option name="y" value="23" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575948981704" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="jdk.selected.JAVA_MODULE" value="12" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="GUI" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="sudoku" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.SudokuGUI">
-    <configuration name="SudokuGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GUI.SudokuGUI" />
-      <module name="HW5.Java.main" />
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <module name="SudokuSolverGUI" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GUI.*" />
+          <option name="PATTERN" value="sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuBoardDisplayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HW5.Java.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GUI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="GUI" />
-      <option name="MAIN_CLASS_NAME" value="GUI.SudokuBoardDisplayTest" />
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuLoaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HW5.Java.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SudokuLoaderTest" />
+    <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuLoaderTest.getSudokuBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HW5.Java.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SudokuLoaderTest" />
-      <option name="METHOD_NAME" value="getSudokuBoard" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuLoaderTest.loadSudokuFromTextFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HW5.Java.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SudokuLoaderTest" />
-      <option name="METHOD_NAME" value="loadSudokuFromTextFile" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Twisted Trial">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.SudokuGUI" />
-        <item itemvalue="JUnit.SudokuBoardDisplayTest" />
-        <item itemvalue="JUnit.SudokuLoaderTest.loadSudokuFromTextFile" />
-        <item itemvalue="JUnit.SudokuLoaderTest.getSudokuBoard" />
-        <item itemvalue="JUnit.SudokuLoaderTest" />
-      </list>
-    </recent_temporary>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dc1910d3-f13b-4b42-910a-68276ae29947" name="Default Changelist" comment="" />
-      <created>1574437512243</created>
+      <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+      <created>1359379246138</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1574437512243</updated>
-      <workItem from="1574437520419" duration="4884000" />
-      <workItem from="1574716079434" duration="2082000" />
-      <workItem from="1575572264635" duration="13714000" />
-      <workItem from="1575641057309" duration="9591000" />
-      <workItem from="1575769030589" duration="697000" />
-      <workItem from="1575774398515" duration="3432000" />
-      <workItem from="1575780072200" duration="26404000" />
-      <workItem from="1575849550636" duration="38817000" />
-      <workItem from="1575948810528" duration="142000" />
+      <updated>1359379246138</updated>
+      <workItem from="1359379250712" duration="1302000" />
+      <workItem from="1599713079610" duration="1839000" />
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="BacktrackingAlgorithmTest_solve - 2019.12.09 at 19h 29m 43s.xml">
-      <configuration name="BacktrackingAlgorithmTest.solve" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_HW5_Java_test - 2019.12.09 at 19h 30m 58s.xml">
-      <configuration name="All in HW5.Java.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SudokuLoaderTest_getDomain - 2019.12.09 at 19h 33m 02s.xml">
-      <configuration name="SudokuLoaderTest.getDomain" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SudokuLoaderTest_getDomain - 2019.12.09 at 19h 33m 44s.xml">
-      <configuration name="SudokuLoaderTest.getDomain" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_HW5_Java_test - 2019.12.09 at 19h 34m 11s.xml">
-      <configuration name="All in HW5.Java.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SudokuLoaderTest - 2019.12.09 at 19h 35m 22s.xml">
-      <configuration name="SudokuLoaderTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SudokuLoaderTest_getSudokuBoard - 2019.12.09 at 19h 47m 08s.xml">
-      <configuration name="SudokuLoaderTest.getSudokuBoard" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SudokuLoaderTest_loadSudokuFromTextFile - 2019.12.09 at 19h 47m 44s.xml">
-      <configuration name="SudokuLoaderTest.loadSudokuFromTextFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SudokuBoardDisplayTest - 2019.12.09 at 19h 53m 29s.xml">
-      <configuration name="SudokuBoardDisplayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SudokuBoardDisplayTest - 2019.12.09 at 19h 53m 47s.xml">
-      <configuration name="SudokuBoardDisplayTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99763000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" />
-      <window_info anchor="right" id="SciView" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.32980332" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26928896" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" />
-      <window_info anchor="right" id="SciView" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1599714281080">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1599714281080" />
+    <state x="413" y="143" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1599713457657">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="143" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1599713457657" />
+    <state x="466" y="258" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1599713459918">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="466" y="258" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1599713459918" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Java/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.desktop/javax/swing/JOptionPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1999">
-          <caret line="362" column="29" selection-start-line="362" selection-start-column="29" selection-end-line="362" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGrid.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuFrame.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuCellKeyListener.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/BacktrackingAlgorithm.java" />
-    <entry file="file://$PROJECT_DIR$/../HW4/Java/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/Algorithms/SudokuAlgorithms.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/algorithms/DFS.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/common/SudokuToText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/BackTrackingListener.java" />
-    <entry file="file://$USER_HOME$/OneDrive/Desktop/abc/SudokuGUI.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/SudokuGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <folding>
-            <element signature="e#0#6121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/LoadListener.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/Main.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/algorithms/StochasticSearchAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/test/java/DFSTest.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/algorithms/BacktrackingAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/algorithms/OnlyOnePossibility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/algorithms/SudokuSolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/SetValueListener.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/SolveListener.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/ActionListeners/HelpListener.java" />
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/common/SudokuValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/common/SudokuLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/test/java/OnlyOnePossibilityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="38" column="104" selection-start-line="38" selection-start-column="104" selection-end-line="38" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/test/java/SudokuToTextTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/test/java/SudokuLoaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/test/java/StochasticSearchAlgorithmTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="38" column="104" selection-start-line="38" selection-start-column="104" selection-end-line="38" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/test/java/SudokuValidatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/test/java/BacktrackingAlgorithmTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="37" column="104" lean-forward="true" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/test/java/GUI/SudokuBoardDisplayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuBoardDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/java/GUI/SudokuGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="241" column="13" lean-forward="true" selection-start-line="241" selection-start-column="13" selection-end-line="241" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Python 3.7 interpreter library</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>main|Java|HW5</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Gradle: junit:junit:4.12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
