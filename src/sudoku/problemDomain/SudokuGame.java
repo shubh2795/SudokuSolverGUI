@@ -1,10 +1,13 @@
 package sudoku.problemDomain;
 
+import sudoku.computationalLogic.SudokuUtilities;
+import sudoku.constants.GameState;
+
 import java.io.Serializable;
 
 public class SudokuGame implements Serializable {
     //enum
-    private final  GameState gameState;
+    private final GameState gameState;
     private final int [][] gridState;
     public static  final int GRID_BOUNDARY=9;
     public GameState getGameState() {

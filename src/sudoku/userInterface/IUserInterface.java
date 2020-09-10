@@ -1,5 +1,6 @@
 package sudoku.userInterface;
 
+import javafx.scene.input.KeyEvent;
 import sudoku.problemDomain.SudokuGame;
 
 public interface IUserInterface {
@@ -16,6 +17,7 @@ public interface IUserInterface {
         void updateBoard(SudokuGame game );
         void showDialog(String Message);
         void showError (String Error);
+        void handle(KeyEvent keyEvent);
 
 
     }

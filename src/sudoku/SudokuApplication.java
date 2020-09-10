@@ -5,7 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import sudoku.buildLogic.SudokuBuildLogic;
 import sudoku.userInterface.IUserInterface;
+import sudoku.userInterface.UserInterface;
 
 import java.io.IOException;
 
