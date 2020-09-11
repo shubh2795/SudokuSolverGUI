@@ -1,0 +1,43 @@
+UserInterface:
+//Manages the window, and displays a pop up notification when the user completes the puzzle.
+
+//This HashMap stores the Hash Values (a unique identifier which is automatically generated;
+    // see java.lang.object in the documentation) of each TextField by their Coordinates. When a SudokuGame
+    //is given to the updateUI method, we iterate through it by X and Y coordinates and assign the values to the
+    //appropriate TextField therein. This means we don't need to hold a reference variable for every god damn
+    //text field in this app; which would be awful.
+    //The Key (<Key, Value> -> <Coordinates, Integer>) will be the HashCode of a given InputField for ease of lookup
+    
+
+ /**
+     * Stage and Group are JavaFX specific classes for modifying the UI. Think of them as containers of various UI
+     * components.
+     * <p>
+     * A HashMap is a data structure which stores key/value pairs. Rather than creating a member variable for every
+     * SudokuTextField object (all 81 of them), I instead store these references within a HashMap, and I retrieve
+     * them by using their X and Y Coordinates as a "key" (a unique value used to look something up).
+     *
+     * @param stage
+     */
+
+ /**
+     * 1. Draw each TextField based on x and y values.
+     * 2. As each TextField is drawn, add it's coordinates (x, y) based on it's Hash Value to
+     * to the HashMap.
+     *
+     * @param root
+     */
+
+ //Note: Note that UserInterfaceImpl implements EventHandler<ActionEvent> in the class declaration.
+                //By passing "this" (which means the current instance of UserInterfaceImpl), when an action occurs,
+                //it will jump straight to "handle(ActionEvent actionEvent)" down below.
+
+
+ /**
+     * In order to draw the various lines that make up the Sudoku grid, we use a starting x and y offset
+     * value (remember, x grows positively from left to right, and y grows positively from top to bottom).
+     * Each square is meant to be 64x64 units, so we add that number each time a
+     *
+     * @param root
+     */
+   
